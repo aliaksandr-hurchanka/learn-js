@@ -3,7 +3,7 @@
 <head>
     <title></title>
     <meta charset="UTF-8">
-    <script src="js/jquery.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
     <!-- <script src="js/main.js"></script> -->
     <!-- <script src="js/constrFunc.js"></script> -->
     <!-- <script src="js/prototypeInheritance.js"></script> -->
@@ -14,14 +14,27 @@
     <!-- <script src="js/encapsulation.js"></script> -->
     <!-- <script src="js/ajax.js"></script>
     <script src="js/mathFunc.js"></script>
-    <script src="js/closure.js"></script> -->
+    <script src="js/closure.js"></script>
     <script src="js/BindCallApply.js"></script>
+    <script src="js/proto.js"></script> -->
+    <script src="/js/ajax/xmlhttprequest.js"></script>
 </head>
 <body>
 
-    <button type="button" onclick="loadDoc()">Request data</button>
+    <!-- <button type="button" onclick="loadDoc()">Request data</button>
     <p id="demo"></p>
     <input type="text" id="input" />
-    <button id="button">User</button>
+    <button id="button">User</button> -->
+
+    <h2>Синхронный запрос</h2>
+    <button onclick="loadSync()" id="button">Загрузить data.json!</button>
+
+    <h2>Асинхронный запрос</h2>
+    <button onclick="loadData()" id="button">Загрузить data.json!</button>
+
+    <h2>Событие readystatechange</h2>
+    <button onclick="run()">Загрузить digits</button>
+
+    <ul id="log"></ul>
 </body>
 </html>
